@@ -1,0 +1,43 @@
+class Matematyka:
+    #1. obliczenie jądra 
+    @staticmethod
+    def jadro(n):
+        print(2*n*n)
+    
+    #2.obliczenie neutrona
+    @staticmethod
+    def neutron():
+        A = float(input("Liczba masowa(A) = "))
+        Z = float(input("Liczba atomowa(Z) = "))
+        print(A - Z)
+    
+    #3.obliczenie Liczbie masowej(A)
+    @staticmethod
+    def Liczbie_masowej():
+        Z = float(input("Liczba atomowa(Z) = "))
+        n = float(input("Neutron(n) = "))
+        print(n + Z)
+
+
+    #4.obliczenie protona
+    @staticmethod
+    def proton():
+        Z = float(input("Liczba atomowa(Z) = "))
+        print(Z)
+
+
+    #5.obliczenie nukleona
+    @staticmethod
+    def nukleona():
+        Z = float(input("Liczba atomowa(Z) = "))
+        A = float(input("Liczba masowa(A) = "))
+        print(Z + (A - Z))
+
+    #6. Obliczenie elektroujemności
+    @staticmethod
+    def elektrouj():
+        E1 = float(input("Elektroujemność perwszego pierwiastka chemicznego = "))
+        E2 = float(input("Elektroujemność drugiego pierwiastka chemicznego = "))
+        print(E1 - E2)
+java = Matematyka
+print(java.elektrouj())
