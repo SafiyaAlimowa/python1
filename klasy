@@ -1,0 +1,8 @@
+import datetime
+from random import randint
+class basicdata:
+    def __init__(self,imie : str,nazwisko : str,wiek : int,rok : int) -> None:
+        self.__imie = imie
+        self.__nazwisko = nazwisko
+        self.wiek = wiek
+        self.rok = rok
